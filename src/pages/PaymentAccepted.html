@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ecommerce - Checkout</title>
+    <link rel="stylesheet" href="../css/checkout3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- CART ICON -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- CART -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content">
+
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">£0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Checkout</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+        <h2 class="section-title">Payment Approved</h2>
+    <div class="progress-checkout-container">
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Shipping</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Payment</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Review</span>
+        </div>
+    </div>
+    
+    <div class="form-container">
+        <h2 class="form-title">Payment Details</h2>
+        <form action="" class="checkout-form">
+            <div class="input-line">
+                <label for="name">Name on card</label>
+                <input type="text" name="name" id="name" placeholder="Your name and surname">
+            </div>
+            <div class="input-line">
+                <label for="name">Card number</label>
+                <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="input-container">
+                <div class="input-line">
+                    <label for="name">Expiring Date</label>
+                    <input type="text" name="name" id="name" placeholder="09-21">
+                </div>
+                <div class="input-line">
+                    <label for="name">CVC</label>
+                    <input type="text" name="name" id="name" placeholder="***">
+                </div>
+            </div>
+            <a href="http://127.0.0.1:5500/src/pages/PaymentAccepted.html">
+            <input type="button" value="Complete purchase">
+            </a>
+        </form>
+    </div>
+      <!-- JAVASCRIPT IMPORT -->
+      <script src="./js/main.js"></script>
+</body>
+</html>

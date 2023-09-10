@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ecommerce - Checkout</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- CART ICON -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- CART -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- Content -->
+                <div class="cart-content">
+
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">£0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Checkout</button>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+        <h2 class="section-title">Checkout</h2>
+    <div class="progress-checkout-container">
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Shipping</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Payment</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Review</span>
+        </div>
+    </div>
+    
+    <div class="form-container">
+        <h2 class="form-title">Shipping Details</h2>
+        <form action="" class="checkout-form">
+            <div class="input-line">
+                <label for="name">Address</label>
+                <input type="text" name="name" id="name" placeholder="123 Street">
+            </div>
+            <div class="input-line">
+                <label for="name">Address 2</label>
+                <input type="text" name="name" id="name" placeholder="123 Street">
+            </div>
+            <div class="input-line">
+                <label for="name">City</label>
+                <input type="text" name="name" id="name" placeholder="London">
+            </div>
+            <div class="input-line">
+                <label for="name">Country</label>
+                <input type="text" name="name" id="name" placeholder="United Kingdom">
+            </div>
+            <a href="http://127.0.0.1:5500/src/pages/PaymentDetails.html">
+            <input type="button" value="Continue to payment">
+            </a>
+        </form>
+    </div>
+      <!-- JAVASCRIPT IMPORT -->
+      <script src="./js/main.js"></script>
+</body>
+</html>
